@@ -26,7 +26,10 @@ def show_long_term_parking():
         if back_to_menu.lower() == "ja":
             from meny import show_menu
             show_menu()
-            break
+            return
+        elif back_to_menu.lower() == "nej":
+            print(f"\nTack för att du använde Quick Park!")
+            return
         else:
-            print(f"\Tack för att du använde Quick Park!")
-            break
+           print("\nOgiltigt val, försök igen.")
+           
