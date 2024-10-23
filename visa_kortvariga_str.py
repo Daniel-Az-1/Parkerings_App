@@ -26,7 +26,7 @@ def show_short_term_parking():
         if back_to_menu.lower() == "ja":
             from meny import show_menu
             show_menu()
-            break
+            return
         else:
             print(f"\nTack för att du använde Quick park!")
-            break
+            return
