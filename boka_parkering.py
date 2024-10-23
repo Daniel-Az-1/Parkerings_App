@@ -1,6 +1,8 @@
 import visa_kortvariga_str
 import visa_langvariga_str
-import hantera_bokning
+import visa_tid_datum
+import hantera_bokning_long
+import hantera_bokning_kort
 import pris_lista_long
 import pris_lista_kort
 
@@ -14,13 +16,15 @@ def book_parking():
             print("\nLångvarig parkering:")
             pris_lista_long.show_pris_long_time()
             visa_langvariga_str.show_available_parking_long()
-            hantera_bokning.manage_booking()
+            visa_tid_datum.datetime()
+            hantera_bokning_long.manage_booking()
             return
         elif user_choice == "2":
             print("\nKortvarig parkering:")
             pris_lista_kort.show_pris_short_time()
             visa_kortvariga_str.show_available_parking_short()
-            hantera_bokning.manage_booking()
+            visa_tid_datum.show_time_and_date()
+            hantera_bokning_kort.manage_booking()
             return
         else:
             print("Ogiltigt val. Vänligen välj ett giltigt alternativ.")
