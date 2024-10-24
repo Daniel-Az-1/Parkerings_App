@@ -1,4 +1,3 @@
-import bekrafta_tiden_long
 
 def manage_booking():
     while True:
@@ -9,6 +8,7 @@ def manage_booking():
         if user_choice.isdigit() and int(user_choice) in [1, 3, 6, 12]:
             user_choice = int(user_choice) 
             print(f"Du har valt att hyra parkeringen i {user_choice} månad/månader.")
+            import bekrafta_tiden_long
             bekrafta_tiden_long.confirm_the_time(user_choice)
             return user_choice 
         else:
