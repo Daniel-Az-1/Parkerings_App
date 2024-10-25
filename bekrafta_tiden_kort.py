@@ -5,8 +5,8 @@ def confirm_the_time(antal_minuter):
 
         if confirm == "ja":
             print("Tiden har bekräftats.")
-            import simulera_betalning_long  # här måste ämdras !
-            simulera_betalning_long.confirm_payment(antal_minuter)  # här måste ändras 
+            import simulera_betalning_kort  
+            simulera_betalning_kort.confirm_payment(antal_minuter)  
             return antal_minuter
 
         elif confirm == "nej":
@@ -15,7 +15,7 @@ def confirm_the_time(antal_minuter):
                 user_choice = input("Tryck 1 för att återgå till huvudmenyn eller 2 för att logga ut: ")
 
                 if user_choice == "1":
-                    import meny  # Importera meny när användaren vill återgå till menyn
+                    import meny  
                     meny.show_menu()
                     return
                 elif user_choice == "2":

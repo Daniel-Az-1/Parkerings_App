@@ -1,10 +1,10 @@
-def confirm_payment(confirmed_number_of_months):
+pris_list = {"En timme": 20}
+def confirm_payment(confirmed_number_of_minutes):
     # Importera pris_lista_long när vi behöver den
-    import pris_lista_long
-    prise = pris_lista_long.pris_list[confirmed_number_of_months]
+    prise = round((confirmed_number_of_minutes * 20) / 60, 2) 
 
     while True:
-        print(f"Du ska betala {prise} kr för att hyra parkeringen i {confirmed_number_of_months} månad/månader.")
+        print(f"Du ska betala {prise} kr för att hyra parkeringen i {confirmed_number_of_minutes} minuter.")
         user_choice = input("Tryck 'ja' för att acceptera debiteringen eller 'nej' för att avbryta och återgå till huvudmenyn: ").lower()
 
         if user_choice == "ja":
@@ -25,17 +25,17 @@ def confirm_payment(confirmed_number_of_months):
 
                             # Visa lediga platser med möjlighet att välja rätt plats
                             while True:
-                                import visa_langvariga_str
-                                visa_langvariga_str.show_available_parking_long()
+                                import visa_kortvariga_str
+                                visa_kortvariga_str.show_available_parking_short()
 
                                 select_parking_space = input("Välj en ledig plats från listan: ")
 
                                 # Kontrollera om vald plats är ledig
-                                if select_parking_space in visa_langvariga_str.parking_spaces and visa_langvariga_str.parking_spaces[select_parking_space] == "ledig":
+                                if select_parking_space in visa_kortvariga_str.parking_spaces and visa_kortvariga_str.parking_spaces[select_parking_space] == "ledig":
                                     new_status = "upptagen"
-                                    import uppdatera_lediga_platser_long
-                                    uppdatera_lediga_platser_long.update_available_parking_spaces(select_parking_space, new_status, confirmed_number_of_months, car_register_number)
-                                    return select_parking_space, new_status, confirmed_number_of_months, car_register_number
+                                    import uppdatera_lediga_platser_kort
+                                    uppdatera_lediga_platser_kort.update_available_parking_spaces(select_parking_space, new_status, confirmed_number_of_minutes, car_register_number)
+                                    return select_parking_space, new_status, confirmed_number_of_minutes, car_register_number
                                 else:
                                     print("Fel inmatning, du valde ett ogiltigt platsnummer. Försök igen.")
                         else:
