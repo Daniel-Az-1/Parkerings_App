@@ -14,16 +14,16 @@ def manage_booking():
         else:
             print("Ogiltig inmatning. Vänligen ange ett positivt heltal för att fortsätta.")
             
-        while True:
-            print("Välj ett av följande alternativ:")
-            print("1) Ange ny parkeringstid")
-            print("2) Avsluta bokningen")
-            retry_choice = input("Ange ditt val: ")
+            while True:
+                print("Välj ett av följande alternativ:")
+                print("1) Ange ny parkeringstid")
+                print("2) Avsluta bokningen")
+                retry_choice = input("Ange ditt val: ")
 
-            if retry_choice == "1":
-                break
-            elif retry_choice == "2":
-                print("Bokningen har avslutats. Tack för att du använde Quick Park! Välkommen åter!")
-                return
-            else:
-                print("Ogiltigt val, försök igen.")
+                if retry_choice == "1":
+                    break
+                elif retry_choice == "2":
+                    print("Bokningen har avslutats. Tack för att du använde Quick Park! Välkommen åter!")
+                    return
+                else:
+                    print("Ogiltigt val, försök igen.")

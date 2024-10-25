@@ -14,16 +14,16 @@ def manage_booking():
         else:
             print("Ogiltigt val. Du kan välja 1, 3, 6 eller 12 månader.")
         
-        while True:
-            print("Välj ett av följande alternativ:")
-            print("1) Ange ett nytt antal månader")
-            print("2) Avsluta bokningen")
-            retry_choice = input("Ange ditt val: ")
+            while True:
+                print("Välj ett av följande alternativ:")
+                print("1) Ange ett nytt antal månader")
+                print("2) Avsluta bokningen")
+                retry_choice = input("Ange ditt val: ")
 
-            if retry_choice == "1":
-                break
-            elif retry_choice == "2":
-                print("Bokningen har avslutats. Tack för att du använde Quick Park!")
-                return
-            else:
-                print("Ogiltigt val, försök igen.")
+                if retry_choice == "1":
+                    break
+                elif retry_choice == "2":
+                    print("Bokningen har avslutats. Tack för att du använde Quick Park!")
+                    return
+                else:
+                    print("Ogiltigt val, försök igen.")
