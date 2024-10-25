@@ -1,12 +1,11 @@
-import registera
-import meny
 def log_in():
-
     while True:
         user_name = input("Ange ditt användarnamn : ")
         password = input("Ange ditt lösenord: ")
+        import registera
 
         if user_name in registera.user_data and password == registera.user_data[user_name]:
+            import meny
             meny.show_menu()
             return 
         else:
@@ -25,9 +24,5 @@ def log_in():
                     return
                 else:
                     print("Ogiltigt val, försök igen.")
-
-            
-
-        
             
     

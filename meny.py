@@ -1,6 +1,3 @@
-import visa_lediga_platser
-import boka_parkering
-
 def show_menu():
     while True:
         print("\nVälkommen till huvudmenyn!")
@@ -10,9 +7,11 @@ def show_menu():
         user_choice = input("Ange ditt val (1-3): ")
         
         if user_choice == "1":
+            import visa_lediga_platser
             visa_lediga_platser.show_parking_spaces()
             return
         elif user_choice == "2":
+            import boka_parkering
             boka_parkering.book_parking()
             return
         elif user_choice == "3":
