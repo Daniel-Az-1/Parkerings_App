@@ -11,7 +11,7 @@ def book_parking():
             import visa_langvariga_str
             visa_langvariga_str.show_available_parking_long()
             import visa_tid_datum
-            visa_tid_datum.datetime()
+            visa_tid_datum.show_time_and_date()
             import hantera_bokning_long
             hantera_bokning_long.manage_booking()
             return

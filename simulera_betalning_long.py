@@ -1,5 +1,4 @@
 def confirm_payment(confirmed_number_of_months):
-    # Importera pris_lista_long när vi behöver den
     import pris_lista_long
     prise = pris_lista_long.pris_list[confirmed_number_of_months]
 
@@ -31,7 +30,7 @@ def confirm_payment(confirmed_number_of_months):
                                 select_parking_space = input("Välj en ledig plats från listan: ")
 
                                 # Kontrollera om vald plats är ledig
-                                if select_parking_space in visa_langvariga_str.parking_spaces and visa_langvariga_str.parking_spaces[select_parking_space] == "ledig":
+                                if select_parking_space in visa_langvariga_str.parking_spaces and visa_langvariga_str.parking_spaces[select_parking_space][0]== "ledig":
                                     new_status = "upptagen"
                                     import uppdatera_lediga_platser_long
                                     uppdatera_lediga_platser_long.update_available_parking_spaces(select_parking_space, new_status, confirmed_number_of_months, car_register_number)

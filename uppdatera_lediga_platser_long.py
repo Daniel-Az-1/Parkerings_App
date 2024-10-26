@@ -5,7 +5,7 @@ def update_available_parking_spaces(space_nummer, ny_status, confirmed_number_of
         import visa_langvariga_str
         visa_langvariga_str.parking_spaces[space_nummer] = [ny_status, regnummer]
         print(f"Du har hyrt parkeringsplatsen {space_nummer} för {confirmed_number_of_months} månad/månader. \nTack för att du har använt Quick Park, hejdå!")
-        return 
+        return visa_langvariga_str.parking_spaces
     elif ny_status == "ledig":
         import visa_langvariga_str
         visa_langvariga_str.parking_spaces[space_nummer] = [ny_status]

@@ -1,6 +1,5 @@
 pris_list = {"En timme": 20}
 def confirm_payment(confirmed_number_of_minutes):
-    # Importera pris_lista_long när vi behöver den
     prise = round((confirmed_number_of_minutes * 20) / 60, 2) 
 
     while True:
@@ -10,7 +9,6 @@ def confirm_payment(confirmed_number_of_minutes):
         if user_choice == "ja":
             print("Du kan betala med MasterCard eller Visa.")
             
-            # Betalningsprocess med möjlighet att försöka igen vid fel
             while True:
                 card_type = input("Välj 'Master' eller 'Visa': ").lower()
                 if card_type in ["master", "visa"]:
@@ -22,8 +20,7 @@ def confirm_payment(confirmed_number_of_minutes):
                         if len(card_cv) == 3 and card_cv.isdigit():
                             print(f"Betalningen lyckades! Du har debiterats med {prise} kr.")
                             car_register_number = input("Ange bilens registreringsnummer: ")
-
-                            # Visa lediga platser med möjlighet att välja rätt plats
+                            
                             while True:
                                 import visa_kortvariga_str
                                 visa_kortvariga_str.show_available_parking_short()
@@ -31,7 +28,7 @@ def confirm_payment(confirmed_number_of_minutes):
                                 select_parking_space = input("Välj en ledig plats från listan: ")
 
                                 # Kontrollera om vald plats är ledig
-                                if select_parking_space in visa_kortvariga_str.parking_spaces and visa_kortvariga_str.parking_spaces[select_parking_space] == "ledig":
+                                if select_parking_space in visa_kortvariga_str.parking_spaces and visa_kortvariga_str.parking_spaces[select_parking_space][0] == "ledig":
                                     new_status = "upptagen"
                                     import uppdatera_lediga_platser_kort
                                     uppdatera_lediga_platser_kort.update_available_parking_spaces(select_parking_space, new_status, confirmed_number_of_minutes, car_register_number)

@@ -7,8 +7,8 @@ parking_spaces = {
         "6":["ledig"],
         "7":["ledig"]
     }
-    
-def show_available_parking_kort():
+
+def show_available_parking_short():
     available = False
     result_str = "\nLediga kortvariga parkeringsplatser:\n"
     

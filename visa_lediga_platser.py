@@ -26,7 +26,7 @@ def show_parking_spaces():
 
         elif choice == "2":
             import visa_kortvariga_str
-            visa_kortvariga_str.show_available_parking_kort()
+            visa_kortvariga_str.show_available_parking_short()
 
             while True:
                 back_to_menu_2 = input("\nVill du gå tillbaka till huvudmenyn? (ja/nej): ")
