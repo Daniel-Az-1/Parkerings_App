@@ -13,11 +13,3 @@ def register():
             import meny
             meny.show_menu()
             return
-        
-
-        
-
-            
-    
-        
-
