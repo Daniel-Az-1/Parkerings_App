@@ -1,4 +1,4 @@
-pris_list = {"En timme": 20}
+pris_list = {"En timme": 20, "24 timmar":"450"}
 
 def show_pris_short_time():
     line_number = 1
