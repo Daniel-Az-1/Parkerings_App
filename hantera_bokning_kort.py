@@ -7,7 +7,7 @@ def manage_booking():
         
         if user_choice.isdigit() and int(user_choice) > 0:
             user_choice = int(user_choice) 
-            print(f"Du har valt att parkera i {user_choice} minuter.")
+            print(f"Du har valt att parkera i {user_choice} minuter.") #måste ändras
             import  bekrafta_tiden_kort
             bekrafta_tiden_kort.confirm_the_time(user_choice)
             return user_choice

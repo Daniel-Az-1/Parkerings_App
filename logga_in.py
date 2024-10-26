@@ -24,5 +24,4 @@ def log_in():
                     return
                 else:
                     print("Ogiltigt val, försök igen.")
-            
-log_in()
+                    
