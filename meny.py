@@ -5,7 +5,7 @@ def show_menu():
         print("1. Visa lediga platser")
         print("2. Boka parkering")
         print("3. Avsluta")
-        user_choice = input("Ange ditt val (1-3): ")
+        user_choice = input("\nAnge ditt val (1-3): ")
         
         if user_choice == "1":
             import visa_lediga_platser
@@ -19,7 +19,7 @@ def show_menu():
             print("Tack för att du använder Quick Park. Välkommen åter!")
             return
         else:
-            print("⚠️ Ogiltigt val, försök igen.")
+            print("\n⚠️ Ogiltigt val, försök igen.\n")
 
 
         

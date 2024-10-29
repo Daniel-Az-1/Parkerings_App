@@ -1,6 +1,6 @@
 def confirm_the_time(antal_minuter):
     while True:
-        print(f"Du har valt att parkera i {antal_minuter} minuter.")
+        print(f"\nDu har valt att parkera i {antal_minuter} minuter.")
         confirm = input("Bekräfta ditt val (ja/nej): ").lower()
 
         if confirm == "ja":

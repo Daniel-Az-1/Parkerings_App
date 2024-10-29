@@ -3,7 +3,7 @@ def confirm_payment(confirmed_number_of_months):
     prise = pris_lista_long.pris_list[confirmed_number_of_months]
 
     while True:
-        print(f"Du ska betala {prise} kr för att hyra parkeringen i {confirmed_number_of_months} månad/månader.")
+        print(f"\nDu ska betala {prise} kr för att hyra parkeringen i {confirmed_number_of_months} månad/månader.")
         user_choice = input("Tryck 'ja' för att acceptera debiteringen eller 'nej' för att avbryta och återgå till huvudmenyn: ").lower()
 
         if user_choice == "ja":

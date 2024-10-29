@@ -1,6 +1,6 @@
 def confirm_the_time(antal_manader):
     while True:
-        print(f"Du har valt att hyra parkeringen i {antal_manader} månad/månader.")
+        print(f"\nDu har valt att hyra parkeringen i {antal_manader} månad/månader.")
         confirm = input("Bekräfta ditt val (ja/nej): ").lower()
 
         if confirm == "ja":

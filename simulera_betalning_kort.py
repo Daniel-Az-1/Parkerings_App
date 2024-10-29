@@ -3,7 +3,7 @@ def confirm_payment(confirmed_number_of_minutes):
     prise = round((confirmed_number_of_minutes * 20) / 60, 2) 
 
     while True:
-        print(f"Du ska betala {prise} kr för att hyra parkeringen i {confirmed_number_of_minutes} minuter.")
+        print(f"\nDu ska betala {prise} kr för att hyra parkeringen i {confirmed_number_of_minutes} minuter.")
         user_choice = input("Tryck 'ja' för att acceptera debiteringen eller 'nej' för att avbryta och återgå till huvudmenyn: ").lower()
 
         if user_choice == "ja":
