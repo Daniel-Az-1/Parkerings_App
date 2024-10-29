@@ -12,7 +12,7 @@ def manage_booking():
             bekrafta_tiden_kort.confirm_the_time(user_choice)
             return user_choice
         else:
-            print("Ogiltig inmatning. Vänligen ange ett positivt heltal för att fortsätta.")
+            print("⚠️ Ogiltig inmatning. Vänligen ange ett positivt heltal för att fortsätta.")
             
             while True:
                 print("Välj ett av följande alternativ:")
@@ -23,7 +23,7 @@ def manage_booking():
                 if retry_choice == "1":
                     break
                 elif retry_choice == "2":
-                    print("Bokningen har avslutats. Tack för att du använde Quick Park! Välkommen åter!")
+                    print("Bokningen har avslutats. Tack för att du använder Quick Park. Välkommen åter!")
                     return
                 else:
-                    print("Ogiltigt val, försök igen.")
+                    print("⚠️ Ogiltigt val, försök igen.")

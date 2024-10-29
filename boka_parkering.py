@@ -27,7 +27,7 @@ def book_parking():
             hantera_bokning_kort.manage_booking()
             return
         else:
-            print("Ogiltigt val. Vänligen välj ett giltigt alternativ.")
+            print("⚠️ Ogiltigt val. Vänligen välj ett giltigt alternativ.")
             while True:
                 print("Välj ett av alternativen:")
                 print("1) Försöka igen")
@@ -37,7 +37,7 @@ def book_parking():
                 if user_choice_2 == "1":
                     break
                 elif user_choice_2 == "2":
-                    print("Tack för att du använde Quick Park! \nHej då!")
+                    print("Tack för att du använder Quick Park. Välkommen åter!")
                     return
                 else:
-                    print("Ogiltigt val, försök igen.")
+                    print("⚠️ Ogiltigt val, försök igen.")

@@ -19,7 +19,7 @@ def confirm_the_time(antal_manader):
                     meny.show_menu()
                     return
                 elif user_choice == "2":
-                    print("Tack för att du använde Quick Park! Hejdå!")
+                    print("Tack för att du använder Quick Park. Välkommen åter!")
                     return
                 else:
-                    print("Ogiltigt val, försök igen.")
+                    print("⚠️ Ogiltigt val, försök igen.")

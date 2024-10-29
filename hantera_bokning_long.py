@@ -12,7 +12,7 @@ def manage_booking():
             bekrafta_tiden_long.confirm_the_time(user_choice)
             return user_choice 
         else:
-            print("Ogiltigt val. Du kan välja 1, 3, 6 eller 12 månader.")
+            print("⚠️ Ogiltigt val. Du kan välja 1, 3, 6 eller 12 månader.")
         
             while True:
                 print("Välj ett av följande alternativ:")
@@ -23,7 +23,7 @@ def manage_booking():
                 if retry_choice == "1":
                     break
                 elif retry_choice == "2":
-                    print("Bokningen har avslutats. Tack för att du använde Quick Park!")
+                    print("Bokningen har avslutats. Tack för att du använder Quick Park. Välkommen åter!")
                     return
                 else:
-                    print("Ogiltigt val, försök igen.")
+                    print("⚠️ Ogiltigt val, försök igen.")

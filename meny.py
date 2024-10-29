@@ -1,6 +1,7 @@
 def show_menu():
+    print("\nVälkommen till huvudmenyn!")
+
     while True:
-        print("\nVälkommen till huvudmenyn!")
         print("1. Visa lediga platser")
         print("2. Boka parkering")
         print("3. Avsluta")
@@ -15,10 +16,10 @@ def show_menu():
             boka_parkering.book_parking()
             return
         elif user_choice == "3":
-            print("Programmet avslutas. Tack för att du använde Quick Park!")
+            print("Tack för att du använder Quick Park. Välkommen åter!")
             return
         else:
-            print("Ogiltigt val, försök igen.")
+            print("⚠️ Ogiltigt val, försök igen.")
 
 
         

@@ -7,7 +7,7 @@ def confirm_payment(confirmed_number_of_minutes):
         user_choice = input("Tryck 'ja' för att acceptera debiteringen eller 'nej' för att avbryta och återgå till huvudmenyn: ").lower()
 
         if user_choice == "ja":
-            print("Du kan betala med MasterCard eller Visa.")
+            print("Du kan betala med Master Card eller Visa Card.")
             
             while True:
                 card_type = input("Välj 'Master' eller 'Visa': ").lower()
@@ -34,17 +34,17 @@ def confirm_payment(confirmed_number_of_minutes):
                                     uppdatera_lediga_platser_kort.update_available_parking_spaces(select_parking_space, new_status, confirmed_number_of_minutes, car_register_number)
                                     return select_parking_space, new_status, confirmed_number_of_minutes, car_register_number
                                 else:
-                                    print("Fel inmatning, du valde ett ogiltigt platsnummer. Försök igen.")
+                                    print("⚠️ Fel inmatning, du valde ett ogiltigt platsnummer. Försök igen.")
                         else:
-                            print("Fel inmatning, CVV-nummer måste vara 3 siffror. Försök igen.")
+                            print("⚠️ Fel inmatning, CVV-nummer måste vara 3 siffror. Försök igen.")
                     else:
-                        print("Fel inmatning, kortnummer måste bestå av 16 siffror och vara korrekt grupperat. Försök igen.")
+                        print("⚠️ Fel inmatning, kortnummer måste bestå av 16 siffror och vara korrekt grupperat. Försök igen.")
                 else:
-                    print("Du måste välja mellan 'Master' eller 'Visa'. Försök igen.")
+                    print("⚠️ Du måste välja mellan 'Master' eller 'Visa'. Försök igen.")
         
         elif user_choice == "nej":
             import meny
             meny.show_menu()
             return
         else:
-            print("Ogiltigt val, svara med 'ja' eller 'nej'.")
+            print("⚠️ Ogiltigt val, svara med 'ja' eller 'nej'.")

@@ -12,6 +12,6 @@ def update_available_parking_spaces(space_nummer, ny_status, confirmed_number_of
         print("Uppdatering av listan av långa parkeringsplatser har lyckats !")
         return
     else:
-        print("Ett tekniskt fel har inträffat! vänligen kontakta kundtjänsten med telefonnummer 0737826801 för att få hjälp")
+        print("⚠️ Ett tekniskt fel har inträffat! vänligen kontakta kundtjänsten med telefonnummer 0737826801 för att få hjälp")
 
 
