@@ -1,7 +1,6 @@
 def show_logo():
     print("=====================================")
-    print("          🚗  Quick Park 🚗          ")
+    print("    🅿️  WELCOME TO QUICK PARK  🅿️  ")
     print("=====================================")
-    print("   **  Välkommen till Quick Park!  **   ")
+    print("     Din pålitliga parkeringsapp      ")
     print("=====================================\n")
-    
