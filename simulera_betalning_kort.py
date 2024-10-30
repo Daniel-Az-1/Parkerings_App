@@ -7,7 +7,7 @@ def confirm_payment(confirmed_number_of_minutes):
         user_choice = input("Tryck 'ja' för att acceptera debiteringen eller 'nej' för att avbryta och återgå till huvudmenyn: ").lower()
 
         if user_choice == "ja":
-            print("Du kan betala med Master Card eller Visa Card.")
+            print("💳 Du kan betala med Master Card eller Visa Card.")
             
             while True:
                 card_type = input("Välj 'Master' eller 'Visa': ").lower()
@@ -18,7 +18,7 @@ def confirm_payment(confirmed_number_of_minutes):
                         card_cv = input("Ange kortets CVV-nummer (3 siffror): ")
 
                         if len(card_cv) == 3 and card_cv.isdigit():
-                            print(f"Betalningen lyckades! Du har debiterats med {prise} kr.")
+                            print(f"Betalningen lyckades ✔️ Du har debiterats med {prise} kr.")
                             car_register_number = input("Ange bilens registreringsnummer: ")
                             
                             while True:

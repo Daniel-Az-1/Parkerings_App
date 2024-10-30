@@ -4,7 +4,7 @@ def confirm_the_time(antal_minuter):
         confirm = input("Bekräfta ditt val (ja/nej): ").lower()
 
         if confirm == "ja":
-            print("Tiden har bekräftats.")
+            print("Tiden har bekräftats ✔️")
             import simulera_betalning_kort  
             simulera_betalning_kort.confirm_payment(antal_minuter)  
             return antal_minuter

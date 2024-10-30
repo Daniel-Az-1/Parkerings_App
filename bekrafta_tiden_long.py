@@ -4,7 +4,7 @@ def confirm_the_time(antal_manader):
         confirm = input("Bekräfta ditt val (ja/nej): ").lower()
 
         if confirm == "ja":
-            print("Tiden har bekräftats.")
+            print("Tiden har bekräftats ✔️")
             import simulera_betalning_long 
             simulera_betalning_long.confirm_payment(antal_manader) 
             return antal_manader

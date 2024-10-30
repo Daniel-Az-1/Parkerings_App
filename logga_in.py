@@ -8,7 +8,7 @@ def log_in():
             password = input("Ange ditt lösenord: ")
 
             if user_name in user_data and password == user_data[user_name]:
-                print("Du är inloggat nu.")
+                print("Du är inloggat nu ✔️")
                 import meny
                 meny.show_menu()
                 return 

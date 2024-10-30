@@ -10,7 +10,7 @@ def confirm_payment(confirmed_number_of_months):
             print("Du kan betala med Master Card eller Visa Card.")
             
             while True:
-                card_type = input("Välj 'Master' eller 'Visa': ").lower()
+                card_type = input("💳 Välj 'Master' eller 'Visa': ").lower()
                 if card_type in ["master", "visa"]:
                     card_number = input("Ange kortnummer (16 siffror, grupperat i 4-tal med mellanslag): ")
 
@@ -18,7 +18,7 @@ def confirm_payment(confirmed_number_of_months):
                         card_cv = input("Ange kortets CVV-nummer (3 siffror): ")
 
                         if len(card_cv) == 3 and card_cv.isdigit():
-                            print(f"Betalningen lyckades! Du har debiterats med {prise} kr.")
+                            print(f"Betalningen lyckades ✔️ Du har debiterats med {prise} kr.")
                             car_register_number = input("Ange bilens registreringsnummer: ")
 
                             while True:

@@ -14,7 +14,7 @@ def register():
                 password = input("Ange ett lösenord: ")
                 user_data[user_name] = password
                 db["user_data"] = user_data
-                print("Din registrering har lyckats.")
+                print("Din registrering har lyckats ✔️")
                 break 
 
     while True:

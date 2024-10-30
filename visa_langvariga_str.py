@@ -13,9 +13,9 @@ def show_available_parking_long():
     result_str = "\nTillgängliga långvariga parkeringsplatser:\n"
 
     for key in parking_spaces:
-            if parking_spaces[key] == ["ledig"]:
-                result_str += f"Parkerings plats: {key}\n"
-                available = True
+        if parking_spaces[key] == ["ledig"]:
+            result_str += f"Parkerings plats: {key}\n"
+            available = True
 
     if not available:
         return "Inga långvariga parkeringsplatser är lediga."
