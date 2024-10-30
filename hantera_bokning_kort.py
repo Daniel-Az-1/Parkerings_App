@@ -22,7 +22,7 @@ def manage_booking():
                 if retry_choice == "1":
                     break
                 elif retry_choice == "2":
-                    print("Bokningen har avslutats. Tack för att du använder Quick Park. Välkommen åter!")
+                    print("Bokningen har avslutats.Tack för att du använder Quick Park. Välkommen åter 👋")
                     return
                 else:
                     print("⚠️ Ogiltigt val, försök igen.")

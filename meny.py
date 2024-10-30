@@ -16,7 +16,7 @@ def show_menu():
             boka_parkering.book_parking()
             return
         elif user_choice == "3":
-            print("Tack för att du använder Quick Park. Välkommen åter!")
+            print("Tack för att du använder Quick Park. Välkommen åter 👋")
             return
         else:
             print("\n⚠️ Ogiltigt val, försök igen.\n")

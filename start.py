@@ -26,7 +26,7 @@ def start_program():
                     print("\nFörsöker igen...")
                     break
                 elif user_choice_2 == '2':
-                    print("\nTack för att du använder Quick Park. Välkommen åter!")
+                    print("\nTack för att du använder Quick Park. Välkommen åter 👋")
                     return
                 else:
                     print("⚠️ Ogiltigt val. Vänligen ange '1' eller '2'.")

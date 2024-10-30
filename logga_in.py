@@ -24,7 +24,7 @@ def log_in():
                     if user_choice == "1":
                      break
                     elif user_choice == "2":
-                        print("Tack för att du har använt Quick Park, hejdå!")
+                        print("Tack för att du använder Quick Park. Välkommen åter 👋")
                         return
                     else:
                         print("⚠️ Ogiltigt val, försök igen.")

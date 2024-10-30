@@ -3,9 +3,9 @@ def register():
     import shelve
     with shelve.open("programs_database_shelve.db") as db:
         user_data = db.get("user_data", {})
+        print("Registrera dig 📝")
 
         while True:
-            print("Registrera dig:")
             user_name = input("Ange ett användarnamn: ")
             
             if user_name in user_data:
@@ -25,7 +25,7 @@ def register():
             logga_in.log_in()
             return
         elif user_choice == "nej":
-            print("Tack för att du använder Quick Park. Välkommen åter!")
+            print("\nTack för att du använder Quick Park. Välkommen åter 👋")
             return 
         else:
             print("⚠️ Ogiltigt val, försök igen.")

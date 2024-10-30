@@ -4,12 +4,12 @@ def update_available_parking_spaces(space_nummer, ny_status, confirmed_number_of
     if ny_status == "upptagen" and regnummer:
         import visa_langvariga_str
         visa_langvariga_str.parking_spaces[space_nummer] = [ny_status, regnummer]
-        print(f"\nDu har hyrt parkeringsplatsen {space_nummer} för {confirmed_number_of_months} månad/månader. \nTack för att du använder Quick Park. Välkommen åter!")
+        print(f"\nDu har hyrt parkeringsplatsen {space_nummer} för {confirmed_number_of_months} månad/månader. \nTack för att du använder Quick Park. Välkommen åter 👋")
         return visa_langvariga_str.parking_spaces
     elif ny_status == "ledig":
         import visa_langvariga_str
         visa_langvariga_str.parking_spaces[space_nummer] = [ny_status]
-        print("Uppdatering av listan av långa parkeringsplatser har lyckats !")
+        print("Uppdatering av listan av långa parkeringsplatser har lyckats ✔️")
         return
     else:
         print("⚠️ Ett tekniskt fel har inträffat! vänligen kontakta kundtjänsten med telefonnummer 0737826801 för att få hjälp")

@@ -7,7 +7,7 @@ def confirm_payment(confirmed_number_of_months):
         user_choice = input("Tryck 'ja' för att acceptera debiteringen eller 'nej' för att avbryta och återgå till huvudmenyn: ").lower()
 
         if user_choice == "ja":
-            print("Du kan betala med Master Card eller Visa Card.")
+            print("Du kan betala med Master Card eller Visa Card 💳")
             
             while True:
                 card_type = input("💳 Välj 'Master' eller 'Visa': ").lower()

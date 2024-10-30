@@ -37,7 +37,7 @@ def book_parking():
                 if user_choice_2 == "1":
                     break
                 elif user_choice_2 == "2":
-                    print("Tack för att du använder Quick Park. Välkommen åter!")
+                    print("Tack för att du använder Quick Park. Välkommen åter 👋")
                     return
                 else:
                     print("⚠️ Ogiltigt val, försök igen.")

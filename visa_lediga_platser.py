@@ -18,7 +18,7 @@ def show_parking_spaces():
                     meny.show_menu()
                     return
                 elif back_to_menu_1.lower() == "nej":
-                    print(f"\nTack för att du använder Quick Park. Välkommen åter!")
+                    print(f"\nTack för att du använder Quick Park. Välkommen åter 👋")
                     return
                 else:
                     print(f"\n⚠️ Ogiltigt svar. Försök igen")
@@ -35,7 +35,7 @@ def show_parking_spaces():
                     meny.show_menu()
                     return
                 elif back_to_menu_2.lower() == "nej":
-                    print(f"\nTack för att du använder Quick Park. Välkommen åter!")
+                    print(f"\nTack för att du använder Quick Park. Välkommen åter 👋")
                     return
                 else:
                     print(f"\n⚠️ Ogiltigt svar. Försök igen")
